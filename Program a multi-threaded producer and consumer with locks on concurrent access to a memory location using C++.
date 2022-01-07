@@ -40,7 +40,7 @@ void* consumer(void* args) {
         count--;
         pthread_mutex_unlock(&mutexBuffer);
         sem_post(&semEmpty);
-        printf("Got %d ", y);
+        printf("Got %d\n", y);
         sleep(1);
     }
 }
