@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    system("ps -ef | awk '{print $2}' >> a.text");
+    return 0;
+}
